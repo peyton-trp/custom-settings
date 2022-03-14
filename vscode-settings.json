@@ -1,74 +1,171 @@
 {
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "files.exclude": {
-        "**/__pycache__": true
-    },
-    "editor.lineNumbers": "relative",
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "vim.insertModeKeyBindingsNonRecursive": [
-        {
-            "before": ["j", "k"],
-            "after": ["<ESC>"]
-        },
+  "go.useLanguageServer": true,
+    "editor.fontSize": 13,
+    "files.trimTrailingWhitespace": true,
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true,
+
+    "python.linting.pylintArgs": ["--extension-pkg-whitelist=cv2"],
+
+    "editor.lineNumbers":"on",
+    "go.gopath": "/Users/peytonrunyan/go/",
+    "settings.cycle":[
+       {
+          "id":"lineNumber",
+          "overrideWorkspaceSettings":false,
+          "values":[
+             {
+                "editor.lineNumbers":"on"
+             },
+             {
+                "editor.lineNumbers":"relative"
+             }
+          ]
+       }
+],
+   "vim.easymotion": true,
+   "editor.lineNumbers":"relative",
+   "vim.smartRelativeLine": false,
+   "vim.easymotionMarkerBackgroundColor": "black",
+   "vim.insertModeKeyBindingsNonRecursive": [
+      {
+        "before": ["j", "k"],
+        "after": ["<ESC>"]
+      }
     ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["J"],
-            "after": ["5", "j"]
-        },
-        {
-            "before": ["K"],
-            "after": ["5", "k"]
-        },
-        {
-            "before": ["<Leader>", "j"],
-            "after": ["J"]
-        },
-        {
-            "before": ["<C-h>"],
-            "after": ["<C-w>", "h"]
-        },
-        {
-            "before": ["<C-j>"],
-            "after": ["<C-w>", "j"]
-        },
-        {
-            "before": ["<C-k>"],
-            "after": ["<C-w>", "k"]
-        },
-        {
-            "before": ["<C-l>"],
-            "after": ["<C-w>", "l"]
-        },
-        {
-            "before": ["<Leader>", "t", "t"],
-            "commands": [":tabnew"]
-        },
-        {
-            "before": ["<Leader>", "t", "n"],
-            "commands": [":tabnext"]
-        },
-        {
-            "before": ["<Leader>", "t", "p"],
-            "commands": [":tabprev"]
-        },
-        {
-            "before": ["<Leader>", "t", "o"],
-            "commands": [":tabo"]
-        },
-        {
+   "vim.hlsearch": true,
+   "vim.leader": "<Space>",
+   "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["J"],
+        "after": ["5", "j"]
+      },
+      {
+        "before": ["K"],
+        "after": ["5", "k"]
+      },
+      {
+         "before": ["<Leader>", "j"],
+         "after": ["J"]
+       },
+       {
+         "before": ["<C-h>"],
+         "after": ["<C-w>", "h"]
+       },
+       {
+         "before": ["<C-j>"],
+         "after": ["<C-w>", "j"]
+       },
+       {
+         "before": ["<C-k>"],
+         "after": ["<C-w>", "k"]
+       },
+       {
+         "before": ["<C-l>"],
+         "after": ["<C-w>", "l"]
+       },
+       {
+         "before": ["<Leader>", "t", "t"],
+         "commands": [":tabnew"]
+       },
+       {
+         "before": ["<Leader>", "t", "n"],
+         "commands": [":tabnext"]
+       },
+       {
+         "before": ["<Leader>", "t", "p"],
+         "commands": [":tabprev"]
+       },
+       {
+         "before": ["<Leader>", "t", "o"],
+         "commands": [":tabo"]
+       },
+       {
+         "before": ["<Leader>", "p"],
+         "commands": [
+             "workbench.action.showCommands",
+         ]
+       },
+       {
+         "before": ["<Leader>", "t"],
+         "commands": [
+             "workbench.action.gotoSymbol",
+         ]
+       },
+       {
         "before": ["leader", "w"],
         "commands": [
             "workbench.action.files.save",
-        ]
-        }
-      ],
-    "vim.leader": "<Space>",
-    "window.zoomLevel": 1
+         ]
+        },
+       {
+        "before": ["leader", "r", "n"],
+        "commands": [
+            "editor.action.rename",
+         ]
+        },
+    ],
+   "todo-tree.tree.showScanModeButton": false,
+   "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true,
+      "**/*.pyc": {"when": "$(basename).py"},
+      "**/__pycache__": true
+   },
+  "autoDocstring.docstringFormat": "numpy",
+"jupyter.sendSelectionToInteractiveWindow": true,
+"go.useLanguageServer": true,
+"go.autocompleteUnimportedPackages": true,
+"go.lintOnSave": "on",
+"jupyter.askForKernelRestart": false,
+"jupyter.experiments.optInto": [
+   "CustomEditor"
+],
+"workbench.editorAssociations": {
+  "*.ipynb": "jupyter-notebook"
+},
+"window.zoomLevel": 1,
+"editor.fontSize": 13,
+"terminal.integrated.fontSize": 13,
+
+"go.lintOnSave": "on",
+"angular.enable-experimental-ivy-prompt": false,
+"workbench.colorTheme": "Dracula Soft",
+"vs-kubernetes": {
+  "vscode-kubernetes.helm-path.mac": "/Users/peytonrunyan/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+  "vscode-kubernetes.kubectl-path.mac": "/Users/peytonrunyan/.vs-kubernetes/tools/kubectl/kubectl",
+  "vscode-kubernetes.minikube-path.mac": "/Users/peytonrunyan/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+},
+"hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODUwLFwiaGVpZ2h0XCI6MTEwMH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+"terminal.integrated.tabs.enabled": true,
+"go.toolsManagement.autoUpdate": true,
+"editor.tabSize": 4,
+"editor.cursorStyle": "line",
+"editor.insertSpaces": false,
+"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+"editor.wordWrap": "off",
+
+"[compose]": {
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.autoIndent": "keep",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  }
+},
+"json.maxItemsComputed": 5500,
+"notebook.cellToolbarLocation": {
+  "default": "right",
+  "jupyter-notebook": "left"
+},
+"notebook.output.textLineLimit": 500,
+"security.workspace.trust.untrustedFiles": "open",
+"redhat.telemetry.enabled": true,
+"diffEditor.ignoreTrimWhitespace": false,
+"bracket-pair-colorizer-2.depreciation-notice": false
 }
